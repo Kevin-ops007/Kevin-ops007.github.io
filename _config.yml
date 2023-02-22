@@ -1,26 +1,41 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
-
 # Setup
-title:            Kevin George Mathew
-tagline:          'Portfolio'
-description:      'Software Engineer| Helping Companies build amazing applications <a href="https://www.linkedin.com/in/kevin-mathew-5bab50196/" target="_blank">@kgm</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title: Kevin George Mathew
+tagline: Software Engineer
+url: https://www.linkedin.com/in/kevin-mathew-5bab50196/
+paginate: 1
+baseurl: ""
+permalink: pretty
 
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
 author:
-  name:           'Kevin George Mathew'
-  url:            https://www.linkedin.com/in/kevin-mathew-5bab50196/
-
-paginate:         5
+  name: Kevin George Mathew
+  url: https://www.linkedin.com/in/kevin-mathew-5bab50196/
+  email: kevingeorgemathew@gmail.com
 
 # Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
+version: 3.0.0
