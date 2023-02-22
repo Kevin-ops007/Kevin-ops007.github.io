@@ -1,2 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-remote_theme: poole/hyde
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Kevin George Mathew
+tagline:          'Portfolio'
+description:      'Software Engineer| Helping Companies build amazing applications <a href="https://www.linkedin.com/in/kevin-mathew-5bab50196/" target="_blank">@kgm</a>.'
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Kevin George Mathew'
+  url:            https://www.linkedin.com/in/kevin-mathew-5bab50196/
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
