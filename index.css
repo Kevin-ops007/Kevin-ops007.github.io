@@ -81,6 +81,7 @@ section ul {
     /* Disable horizontal scroll */
     padding-top: 30%;
     flex-basis: 20%;
+    padding-right: 5%;
 }
 
 /* The navigation menu links */
