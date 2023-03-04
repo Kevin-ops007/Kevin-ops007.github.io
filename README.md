@@ -1,3 +1,3 @@
 ### Portfolio Website
 
-Built using Poole Jekyll theme
+Built using the plain old HTML,CSS and Javascript Combo

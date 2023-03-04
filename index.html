@@ -1,18 +1,204 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Kevin George Mathew</title>
+    <script>
+        toggleDarkMode = () => document.body.classList.toggle("dark-mode");
+    </script>
+</head>
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
+<body>
+    <div class="division">
+        <div class="contact">
+            <ul>
+                <li>
+                    <a href="https://github.com/Kevin-ops007">
+                        <img src="./assets/github.png" alt="github" width="35" height="35">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kevin-mathew-5bab50196/">
+                        <img src="./assets/linkedin.png" alt="linkedin" width="35" height="35">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@kevingeorgemathew5614">
+                        <img src="./assets/youtube.png" alt="linkedin" width="35" height="35">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <!-- make a flex container with flex direction column -->
+            <div class="header">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacting">Contact</a></li>
+                        <li><button class="bulb" onClick="toggleDarkMode()">Do not press!</button></li>
+
+                    </ul>
+                </div>
+            </div>
+            <section id="home">
+                <h1>
+                    Hi! I'm <strong>Kevin</strong>
+                </h1>
+                <p>
+                    I'm a <strong>Software Engineer</strong>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./assets/software-engineer.png" alt="linkedin" width="300" height="300">
+                    <br>
+                    <br>
+                    <br>
+                    Facts about me:
+                <ul>
+                    <li>📚 Fourth-Year Software Engineering student at the <strong>University of Victoria</strong></li>
+                    <li>📍 Victoria, BC</li>
+                    <li>👨‍💻 Passionate about scalability </li>
+                </ul>
+                </p>
+            </section>
+
+            <section id="work">
+                <h2>
+                    Work Experience
+                </h2>
+                <div class="exp">
+                    <h3>Software Engineer Intern</h3>
+                    <h4>Opensignal, Victoria B.C</h4>
+                    <h5>May 2022 - August 2022</h5>
+                    <p>
+                        I worked on the Data Team as a Software Engineer Intern. We used Java with Apache Beam and
+                        Google DataFlow to process and analyze data from mobile devices. I worked on the Data Quality
+                        team, where I worked on a project to improve the quality of the data we collected. I also worked
+                        on the Data Pipeline team, where I worked on a project to improve the performance of our data
+                        pipeline. While working on these projects, I learned a lot about data processing and geo data.
+                        Some of the technologies I used were Java, Apache Beam, Google DataFlow, Google Cloud
+                        Platform,Terraform, and Docker.
+                        Notable achievements include developing an Apache Beam job using Dataflow runner class to
+                        generate geohashes based on country and upload the geohashes to Google Cloud Platforms Big
+                        Query.
+                        I also optimized Big Query Monitoring job by using parallel computing, selective fetching, and
+                        code refactoring to reduce runtime of job from 20 minutes to 17 seconds.
+                        Furthermore I learned some Terraform and Terraformed a project to easily manage service
+                        accounts, permissions, and infrastructure.
+
+                    </p>
+                </div>
+                <div class="exp">
+                    <h3>Software Engineer Intern</h3>
+                    <h4>Apyrse, Vancouver B.C</h4>
+                    <h5>Jan 2021 - April 2022</h5>
+                    <p>
+                        I worked on the Mobile Team as a Mobile Engineer Intern. I reported to both Android and iOS
+                        heads of the PDFTron mobile team as I was in charge of their cross platform SDK projects such as
+                        React Native, Flutter and Xamarin.
+                        I worked on the React Native project, where I worked on a project to improve the performance of
+                        the React Native SDK. I also worked on the Flutter project, where I worked on a project to
+                        improve the performance of the Flutter SDK. While working on these projects, I learned a lot
+                        about React Native and Flutter. Some of the technologies I used were React Native, Flutter,
+                        Java, C# and Objective-C. I had also spent some time working on Github Actions.
+                        Notable achievements include upgrading the React-Native version of sample apps from 0.58 to 0.67
+                        as well as transform class components to functional components to use React Hooks.
+                        I also implemented GitHub actions to automate publishing to pub.dev and npm whenever a new
+                        feature isintroduced.
+                    </p>
+                </div>
+                <div class="exp">
+                    <h3>Software Engineer Intern</h3>
+                    <h4>Aquatic Informatics, Vancouver B.C</h4>
+                    <h5>September 2021 - December 2021</h5>
+                    <p>
+                        I worked on the Aquarius Sample Team as a Software Engineer Intern. I did full stack development
+                        with Java, Spring Boot, AngularJS, and PostgreSQL. All the features I developed included unit
+                        tests,
+                        Selenium UI test and integration tests. Some features also included Cucumber tests. This
+                        internship was my first experience into the world of devOps and I learned a lot about it.
+                        I was able to learn more about CI/CD pipelines and how to use Jenkins to create one and about
+                        AWS tools.
+                        I also learned more about Docker and how to use it to create containers. Furthermore a lit bit
+                        of Solr as well, just a little bit.
+                        Notable achievements include automating creation and maintenance of RDS instances with AWS
+                        CloudFormation using YAML templates and bash scripts to automate deployment for RDS by 100%.
+                        Creating secrets in AWS secrets manager and cache secrets using AWS library in
+                        C3P0 to remove 100% occurrences of database credentials from source code
+                    </p>
+                </div>
+                <div class="exp">
+                    <h3>Software Engineer Intern</h3>
+                    <h4>Peloton Technologies, Victoria B.C</h4>
+                    <h5>May 2021 - August 2021</h5>
+                    <p>
+                        I worked on the Peloton Team as a Software Engineer Intern. I did full stack development with
+                        ASP.Net MVC framework. This was my first coop and it gave me the first real world software
+                        engineering experience.
+                        I was able to learn more about the software development life cycle and how to work in a team.
+                        Moreover I learned about how Payments Processing works in the internet as well various things
+                        about the financial technology space. On the frontend side of things I learned JQuery, KendoUI
+                        and basic Javascript topics.
+                        While on the backend side of things I learned C#, ASP.Net MVC, Entity Framework, SQL Server and
+                        various design patterns.
+                    </p>
+                </div>
+            </section>
+            <section id="projects">
+                <h2> Projects </h2>
+                <h3>Space Invaders Game!</h3>
+                <p>
+                    This is first real applicaiton that I had built. Hence it's first in the list. It's a simple space
+                    invaders game that we all know and love by built using Python's Pygame Framework. Support on this
+                    framework was low but nonetheless it was a fun project to work on.
+                    The game is essentially a bunch of moving images. There's an infinite while that goes on while
+                    images move aroudn the screent according to the user's input.
+                    All these projects described in the website are on my Github so please do find them and let me know
+                    what you think!!!
+                </p>
+                <h3> Student Events Planner </h3>
+                <p>
+                    A web application that allows students to create events and invite other students to attend. The
+                    application is built using Java Spring Boot, React, and PostgreSQL. The application is mostly built
+                    to improve my understanding of design patterns.
+                <p>
+                <h3> Recipe App </h3>
+                <p>
+                    This is a recipe app that I built using React. It uses the Edamam API to fetch recipes and display
+                    them to the user.
+                    It has a simple search bar and once the user searches for a recipe, it displays the recipes in a
+                    grid format.
+                </p>
+                <h3> Sudoku Solver </h3>
+                <p>
+                    This is a sudoku solver that I built using Python. It uses backtracking to solve the sudoku puzzle.
+                    It takes in a 2D array of integers and solves the puzzle. It doesn't do much but if you give the 2D
+                    array of integers representing the sudoku puzzle, it will solve it. Caveat it has to be solvable.
+                    I'll probably take this project up again and make it more robust and playable.
+                </p>
+            </section>
+
+            <section id="contacting">
+                <h1>
+                    Lets Connect!
+                </h1>
+                <p>
+                    Best way to contact me is through email. I'm always open to new opportunities and would love to hear
+                    from you.
+                    Linkedin is also a good way to contact me.
+                </p>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
